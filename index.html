@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-containt{
+  display: flex;
+}
+
+.flex-containt  div{
+  margin:10px;
+	padding:10px;
+	background-color: #f1f1f1;
+	border: solid;
+	border-radius: 50%;
+	width: 20px;
+	text-align: center;
+	
+}
+.flex-containt  div:hover{
+  margin:10px;
+	padding:10px;
+	background-color: #ffebbc;
+	border: solid;
+	border-radius: 50%;
+	width: 20px;
+	text-align: center;
+	cursor: pointer;
+	
+}
+.cantainer{
+	position: absolute;
+	top:25%;
+	left: 42%;
+	border: solid;
+	border-radius: 25px;
+	
+	
+}
+body{
+	background: #35bcbf;
+}
+.main{
+	padding: 10px;
+}
+.screen{
+	border: solid;
+	padding: 5px;
+	background: #f7f7f7;
+}
+
+</style>
+</head>
+<body>
+
+	<div class="cantainer">
+		<form class="main">
+			<div id="screenv" class="screen">0</div>
+			<div class="flex-containt">
+				<div onclick="insertvalue('7')">7</div>
+				<div onclick="insertvalue('8')">8</div>
+				<div onclick="insertvalue('9')">9</div>
+				<div onclick="opratorvalue('/')">/</div>
+			</div>
+			<div class="flex-containt">
+				<div onclick="insertvalue('4')">4</div>
+				<div onclick="insertvalue('5')">5</div>
+				<div onclick="insertvalue('6')">6</div>
+				<div onclick="opratorvalue('+')">+</div>
+			</div>
+			<div class="flex-containt">
+				<div onclick="insertvalue('1')">1</div>
+				<div onclick="insertvalue('2')">2</div>
+				<div onclick="insertvalue('3')">3</div>
+				<div onclick="opratorvalue('*')">*</div>
+			</div>
+			<div class="flex-containt">
+				<div onclick="insertvalue('0')">0</div>
+				<div onclick="insertvalue('.')">.</div>
+				<div onclick="togglevalue()">+/-</div>
+				<div onclick="opratorvalue(-'')">-</div>
+			</div>
+			<div class="flex-containt">
+				<div onclick="allclear()">AC</div>
+				<div onclick="singlecrear()">CE</div>
+				<div onclick="finalresult()">=</div>
+				
+			</div>
+		</form>
+	</div>
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
+
+
